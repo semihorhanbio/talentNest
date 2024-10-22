@@ -19,7 +19,7 @@
   "author": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/semihorhanbio/talentNest/tree/main/shared"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
