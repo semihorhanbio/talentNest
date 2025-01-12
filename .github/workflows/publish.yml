@@ -15,12 +15,22 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18.x'
+
+      - name: Change to package directory
+        run: cd shared # Replace with your actual folder name
+
       - run: npm install
+        working-directory: ./shared
+
       - run: npm run build
+        working-directory: ./shared
+
       - run: |
           echo @semihorhanbio:https://npm.pkg.github.com/ > build/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> build/.npmrc
+        working-directory: ./shared
+
       - run: npm publish
-        working-directory: ./build
+        working-directory: ./shared/build
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
