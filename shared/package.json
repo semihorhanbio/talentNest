@@ -16,10 +16,10 @@
   },
   "keywords": [],
   "name": "",
-  "author": "",
+  "author": "Semih Orhan",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/semihorhanbio/talentNest/tree/main/shared"
+    "url": "git+https://github.com/semihorhanbio/talentNest.git?path=shared"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
