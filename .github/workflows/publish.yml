@@ -28,7 +28,7 @@ jobs:
         working-directory: ./shared
 
       - name: Create .npmrc file
-      - run: |
+        run: |
           echo @semihorhanbio:https://npm.pkg.github.com/ > build/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> build/.npmrc
         working-directory: ./shared
